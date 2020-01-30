@@ -10,7 +10,7 @@ The template `django.json` contains just a minimal set of components to get your
 
 Copy/Download the okd warrior template: `django.json` from the root folder of the project
 
-### A) Deploy using Openshift Web Console:
+A) Deploy using Openshift Web Console:
 
 Login to openshift web-console.
 
@@ -25,7 +25,7 @@ In the web console, the overview tab shows you a service, by default called "dja
     oc get svc
 
 
-### B) Deploy using command line of okd cluster:
+B) Deploy using command line of okd cluster:
 
 oc login to openshift command line.
 
@@ -35,6 +35,9 @@ create a namespace using
 Deploy the template using following command in the cli
 `oc new-app -f <template_name.json`
 
+
+The aplication is configured to access in node port:30199 , so it can accessed with the <route>:<nodeport>
+Ex: http://django-example-hw-dj.apps.openshift.com:30199
 
 ## Logs
 
