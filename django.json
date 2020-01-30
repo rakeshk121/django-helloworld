@@ -43,11 +43,13 @@
       "spec": {
         "ports": [
           {
+            "nodePort":"30199",
             "name": "web",
             "port": 8080,
             "targetPort": 8080
           }
         ],
+        "type": "NodePort",
         "selector": {
           "name": "${NAME}"
         }
