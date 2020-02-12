@@ -1,2 +1,2 @@
 # requirements.txt file
-django==2.1
+django==2.2.10
